@@ -19,7 +19,7 @@ vegetabletotal:number;
 
 items:Mykitchen[]=[];
 item=new Item();
-  constructor(private itemservice:kitchenservice,private route:Router) { }
+  constructor(private itemservice:kitchenservice) { }
 
   ngOnInit(): void {
     this.items=this.itemservice.getItems();
