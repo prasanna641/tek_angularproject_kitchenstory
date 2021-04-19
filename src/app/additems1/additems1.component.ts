@@ -19,7 +19,7 @@ fruittotal:number;
 
 items:Mykitchen1[]=[];
 item=new Item1();
-  constructor(private itemservice:utensilsservice,private route:Router) { }
+  constructor(private itemservice:utensilsservice) { }
 
   ngOnInit(): void {
     this.items=this.itemservice.getItems1();
