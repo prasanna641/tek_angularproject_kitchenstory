@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kitchenstory';
+  imgHeight="500";
+  imgWidth="500";
 }
