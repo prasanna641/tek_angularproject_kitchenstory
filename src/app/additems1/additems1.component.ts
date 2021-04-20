@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 //import {Router} from '@angular/Router';
-//import {Item1} from './additems1';
+import {Item1} from './additems1';
 import { Mykitchen1} from "../utensils/utensils";
 import{utensilsservice} from '../utensils/utensils.service';
 @Component({
