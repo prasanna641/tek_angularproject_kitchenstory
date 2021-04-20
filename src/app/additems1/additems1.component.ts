@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
-//import {Router} from '@angular/Router';
+import {Router} from '@angular/Router';
 import {Item1} from './additems1';
 import { Mykitchen1} from "../utensils/utensils";
 import{utensilsservice} from '../utensils/utensils.service';
@@ -19,7 +19,7 @@ fruittotal:number;
 
 items:Mykitchen1[]=[];
 item=new Item1();
-  constructor(private itemservice:utensilsservice) { }
+  constructor(private itemservice:utensilsservice,private route:Router) { }
 
   ngOnInit(): void {
     this.items=this.itemservice.getItems1();
@@ -38,6 +38,6 @@ onItemAdd(userForm:NgForm)
   this.items.push(a);
   console.log(a);
   alert("Item added");
-  //this.route.navigate(['./adfruit']);
+  this.route.navigate(['./adfruit']);
 }
 }
